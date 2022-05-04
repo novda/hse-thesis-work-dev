@@ -153,7 +153,7 @@ export function RecommendationPage() {
                 Elon Musk announced an offer to buy Twitter for $54.20 a share.
                 On April 25th, Twitter accepted the deal.
               </Card.Text>
-              <Card.Link href="#">Go to news</Card.Link>
+              <Card.Link href="https://www.theverge.com/23026874/elon-musk-twitter-buyout-news-updates">Go to news</Card.Link>
             </Card.Body>
           </Card>
         </Col>

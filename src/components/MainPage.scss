@@ -7,15 +7,19 @@
 }
 
 button {
-  background-color: #A0EEFF;
+  background-color: #a0eeff;
 }
 
 #button-addon2 {
-  color: #6c757d;
+  color: #535658;
   border-color: #6c757d;
-  background-color: #A0EEFF; 
+  background-color: #a0eeff;
   width: 150px;
   height: 50px;
+
+  &:hover {
+    background-color: #2ad8ff;
+  }
 }
 
 .popular-news {
@@ -26,7 +30,22 @@ button {
   width: 20px;
 }
 
-button:hover {
-  color: #6c757d;
-  opacity: 0.9;
+.popular-news img {
+  height: 250;
+  object-fit: cover;
+}
+
+.popular-news-card {
+  margin-right: 5px;
+
+  button {
+    background-color: #a0eeff;
+    border-color: #6c757d;
+    color: #535658;
+
+    &:hover {
+      background-color: #2ad8ff;
+      border-color: #6c757d;
+    }
+  }
 }
