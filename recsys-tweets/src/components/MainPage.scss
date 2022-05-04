@@ -1,0 +1,45 @@
+.MainPage {
+  display: grid;
+  grid-template-areas: "left left left main main main main right right";
+  
+  height: 100vh;
+
+  margin-top: 100px;
+}
+
+.left-sidebar {
+  grid-area: left;
+  max-width: 400px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.main {
+  grid-area: main;
+  max-width: 800px;
+}
+
+.right-sidebar {
+  grid-area: right;
+}
+
+#button-addon2 {
+  color: #6c757d;
+  border-color: #6c757d;
+  background-color: #A0EEFF; 
+  width: 150px;
+  height: 50px;
+}
+
+button:hover {
+  color: #6c757d;
+  opacity: 0.9;
+}
+
+h2 {
+  text-align: left;
+}
+
+img {
+  width: 20px;
+}

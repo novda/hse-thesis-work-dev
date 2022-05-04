@@ -1,0 +1,19 @@
+.newsSingle  h1 {
+  color: rgb(240, 81, 81);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsSingle p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsSingle {
+  padding: 20px;
+  border: rgba(129, 129, 129, 0.466) solid 1px; 
+  border-radius: 3px;
+  width: 220px;
+  height: 100px;
+  margin: 20px;
+
+  cursor: pointer;
+}
