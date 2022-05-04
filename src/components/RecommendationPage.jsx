@@ -28,7 +28,7 @@ const data = [
   {
     user: "Tomas Tuxel",
     text: "There is so much potential with Twitter to be the most trusted & broadly inclusive forum in the world!",
-    source: "reddit",
+    source: "twitter",
   },
   {
     user: "Yurgen Klopp",
@@ -99,7 +99,7 @@ const data = [
 
 export function RecommendationPage() {
   return (
-    <Container>
+    <Container className="rec-page-container">
       <Row>
         <Col className="rec-header">
           <h1>Recommend posts</h1>
@@ -108,7 +108,7 @@ export function RecommendationPage() {
       <Row>
         <Col xs={3}>
           <h3>From users</h3>
-          <Card>
+          <Card className="from-users">
             <Card.Header>
               <img alt="twitter" src={twitter_icon} /> Twitter
             </Card.Header>
@@ -146,10 +146,12 @@ export function RecommendationPage() {
           <Card className="news-title">
             <Card.Body>
               <Card.Title>Elon Musk to buy Twitter</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">cnn.com</Card.Subtitle>
+              <Card.Subtitle className="mb-2 text-muted">
+                theverge.com
+              </Card.Subtitle>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Elon Musk announced an offer to buy Twitter for $54.20 a share.
+                On April 25th, Twitter accepted the deal.
               </Card.Text>
               <Card.Link href="#">Go to news</Card.Link>
             </Card.Body>
