@@ -1,5 +1,7 @@
 import { MainPage } from "./components/MainPage";
 import { RecommendationPage } from "./components/RecommendationPage";
+import { RecommendationPageLiverpool } from "./components/RecommendationPageLiverpool";
+import { RecommendationPageJolie } from "./components/RecommendationPageJolie";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -23,6 +25,8 @@ function App() {
       <Routes>
         <Route path={""} element={<MainPage />} />
         <Route path={"recommends"} element={<RecommendationPage />} />
+        <Route path={"recommends2"} element={<RecommendationPageLiverpool />} />
+        <Route path={"recommends3"} element={<RecommendationPageJolie />} />
       </Routes>
     </BrowserRouter>
   );

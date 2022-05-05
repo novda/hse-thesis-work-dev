@@ -112,7 +112,7 @@ export function MainPage() {
                 </Card.Text>
                 <Link
                   to={{
-                    pathname: "/recommends",
+                    pathname: "/recommends2",
                   }}
                 >
                   <Button variant="info">Get posts</Button>
@@ -133,7 +133,13 @@ export function MainPage() {
                   Hollywood actor and UN envoy met refugees in the western city
                   of Lviv on Saturday, its regional governor said
                 </Card.Text>
+                <Link
+                  to={{
+                    pathname: "/recommends3",
+                  }}
+                >
                 <Button variant="info">Get posts</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Row>

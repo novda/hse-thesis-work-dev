@@ -63,26 +63,26 @@ const data = [
     user: "Jurgen Klopp",
     login: "jurgen_k",
     text: `Bluesky is a Twitter-backed project to "develop an open and decentralized standard for social media." says it is an independent company.
-    Back in late 2019, when Jack Dorsey was still CEO of Twitter, he set in motion a plan to "develop an open and decentralized standard for social media" that would explore elements of crypto and Web3.
-    That effort, which came to be called "bluesky," gained steam in 2021 with a January "ecosystem review" of decentralized social apps and the August appointment of Zcash veteran developer Jay Graber as its lead.
-    Today, bluesky took to Twitter—the platform soon to be privately owned by mega-billionaire Elon Musk—to clarify that it's independent of the social media site and has been a public benefit limited liability company since February.
-    "The 'public benefit' part of our structure gives us the freedom to put our resources towards our mission without an obligation to return money to shareholders," it tweeted. "The company is owned by the team itself, without any controlling stake held by Twitter."
-    Given the surge of interest in Twitter's future, we thought this would be a good time to clarify the relationship between Bluesky and Twitter.
-    According to bluesky, where Dorsey remains a board member, it has $13 million in funding "to ensure we have the freedom and independence to get started on R&D."
-    In other words, it's somewhat beyond Musk's reach, even though the Tesla CEO just paid $44 billion for Twitter and has plans to improve it—from removing spam and minimizing content moderation to potentially introducing crypto payments.
-    Bluesky has taken inspiration from a number of crypto projects, including IPFS—a protocol that allows for peer-to-peer file sharing—to the Basic Attention Token that incentivizes Brave browser readers to watch ads.
-    Dorsey, however, is a Bitcoin maximalist. Now focused solely on leading payments company Block.
-    By contrast, Musk, though he cozied up to Bitcoin when Tesla bought $1.5 billion in BTC for its books, is more enamored of Dogecoin. He's been working with that blockchain's part-time developers to make it into a payment network that surpasses Bitcoin.
-    #payments #blockchain#Payments`,
+Back in late 2019, when Jack Dorsey was still CEO of Twitter, he set in motion a plan to "develop an open and decentralized standard for social media" that would explore elements of crypto and Web3.
+That effort, which came to be called "bluesky," gained steam in 2021 with a January "ecosystem review" of decentralized social apps and the August appointment of Zcash veteran developer Jay Graber as its lead.
+Today, bluesky took to Twitter—the platform soon to be privately owned by mega-billionaire Elon Musk—to clarify that it's independent of the social media site and has been a public benefit limited liability company since February.
+"The 'public benefit' part of our structure gives us the freedom to put our resources towards our mission without an obligation to return money to shareholders," it tweeted. "The company is owned by the team itself, without any controlling stake held by Twitter."
+Given the surge of interest in Twitter's future, we thought this would be a good time to clarify the relationship between Bluesky and Twitter.
+According to bluesky, where Dorsey remains a board member, it has $13 million in funding "to ensure we have the freedom and independence to get started on R&D."
+In other words, it's somewhat beyond Musk's reach, even though the Tesla CEO just paid $44 billion for Twitter and has plans to improve it—from removing spam and minimizing content moderation to potentially introducing crypto payments.
+Bluesky has taken inspiration from a number of crypto projects, including IPFS—a protocol that allows for peer-to-peer file sharing—to the Basic Attention Token that incentivizes Brave browser readers to watch ads.
+Dorsey, however, is a Bitcoin maximalist. Now focused solely on leading payments company Block.
+By contrast, Musk, though he cozied up to Bitcoin when Tesla bought $1.5 billion in BTC for its books, is more enamored of Dogecoin. He's been working with that blockchain's part-time developers to make it into a payment network that surpasses Bitcoin.
+#payments #blockchain#Payments`,
     source: "facebook",
   },
   {
     user: "Mona Salama",
     login: "bymonasalama",
     text: `Elon Musk has secured $7.14 billion from 19 backers for his proposed acquisition of Twitter
-    Among the backers listed on the SEC filing are Oracle co-founder Larry Ellison is investing $1B, cryptocurrency exchange Binance is contributing $500 million
-    Saudi Arabia Prince Alwaleed Bin Talal, a current Twitter investor committed to buy 34,948,975 shares, worth ~$1.7 billion
-    Securing $7B in new financing commitment, Musk cuts his $12.5B mar­gin loan by half to $6.25B & increased his equity commitment for the takeover to $27.25B`,
+Among the backers listed on the SEC filing are Oracle co-founder Larry Ellison is investing $1B, cryptocurrency exchange Binance is contributing $500 million
+Saudi Arabia Prince Alwaleed Bin Talal, a current Twitter investor committed to buy 34,948,975 shares, worth ~$1.7 billion
+Securing $7B in new financing commitment, Musk cuts his $12.5B mar­gin loan by half to $6.25B & increased his equity commitment for the takeover to $27.25B`,
     source: "facebook",
   },
 ];
@@ -94,7 +94,7 @@ export function RecommendationPage() {
     setTimeout(() => {
       console.log("LOADING...");
       setIsLoading(false);
-    }, 3000);
+    }, 1500);
   }, []);
 
   return isLoading ? (
