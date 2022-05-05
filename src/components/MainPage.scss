@@ -4,6 +4,21 @@
 
 .left-card {
   max-width: 350px;
+
+  .social-item {
+    &:hover {
+      cursor: pointer;
+    }
+
+    a {
+      color: #6c757d;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 button {
@@ -37,11 +52,13 @@ button {
 
 .popular-news-card {
   margin-right: 5px;
+  padding: 0;
 
   button {
     background-color: #a0eeff;
     border-color: #6c757d;
     color: #535658;
+    bottom: 102px;
 
     &:hover {
       background-color: #2ad8ff;
@@ -49,3 +66,6 @@ button {
     }
   }
 }
+
+
+

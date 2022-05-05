@@ -4,7 +4,7 @@ import twitter_word from "./icons/twitter_word.png";
 import fb_word from "./icons/fb_word.png";
 import reddit_word from "./icons/reddit_1.png";
 
-export function PostSingle({ user, text, source }) {
+export function PostSingle({ user, login, text, source }) {
   let source_network = null;
 
   if (source === "twitter") {
@@ -18,10 +18,12 @@ export function PostSingle({ user, text, source }) {
   return (
     <Card className="post">
       <Card.Body>
-        <Card.Title>{user}</Card.Title>
+        <Card.Title>
+          {user} {login && <span className="user-login">{login}</span>}
+        </Card.Title>
         {text}
       </Card.Body>
-        <img alt={source} src={source_network} className="icon"/>
+      <img alt={source} src={source_network} className="icon" />
     </Card>
   );
 }

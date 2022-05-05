@@ -14,6 +14,7 @@ import "./MainPage.scss";
 import twitter_icon from "./icons/twitter_blue.png";
 import fb_icon from "./icons/fb_icon.png";
 import reddit_icon from "./icons/reddit.png";
+import inst_icon from "./icons/instagram_icon.png";
 
 export function MainPage() {
   return (
@@ -24,14 +25,25 @@ export function MainPage() {
             <Card.Header>Social accounts</Card.Header>
             <Card.Body>
               <ListGroup variant="flush">
-                <ListGroup.Item>
+                <ListGroup.Item className="social-item">
                   <img alt="twitter" src={twitter_icon} /> @SLAVASLAVA
                 </ListGroup.Item>
-                <ListGroup.Item className="to-connect">
-                  <img alt="twitter" src={fb_icon} /> Facebook
+                <ListGroup.Item className="social-item">
+                  <img alt="facebook" src={fb_icon} /> Vyacheslav Skuratov
                 </ListGroup.Item>
-                <ListGroup.Item className="to-connect">
-                  <img alt="twitter" src={reddit_icon} /> Reddit
+                <ListGroup.Item className="social-item">
+                  <img alt="reddit" src={reddit_icon} /> Skuratov
+                </ListGroup.Item>
+                <ListGroup.Item className="social-item">
+                  <img alt="instagram" src={inst_icon} /> Instagram{" "}
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    className="click-to-connect"
+                    rel="noreferrer"
+                  >
+                    (Click to connect)
+                  </a>
                 </ListGroup.Item>
               </ListGroup>
             </Card.Body>
@@ -72,8 +84,9 @@ export function MainPage() {
               <Card.Body>
                 <Card.Title>Elon Musk to buy Twitter</Card.Title>
                 <Card.Text>
-                  Elon Musk announced an offer to buy Twitter for $54.20 a
-                  share. On April 25th, Twitter accepted the deal.
+                  Today Elon Musk announced a huge offer to buy Twitter for
+                  $54.20 a share. On April 25th, Twitter successfully accepted
+                  the deal. 🚀🔥🔥🔥
                 </Card.Text>
                 <Link
                   to={{
@@ -88,16 +101,22 @@ export function MainPage() {
               <Card.Img
                 style={{ height: 200 }}
                 variant="top"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIArhKeoY1T6hExDiTrNUl9wDbSA5tUmeqg&usqp=CAU"
+                src="https://img.asmedia.epimg.net/resizer/CQ7UEudDmCpJITH-4e_bvW2yYXg=/360x203/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/BJGPXJEJPNAU7LNY3GIWLREAZI.png"
               />
               <Card.Body>
                 <Card.Title>Liverpool in CHL final</Card.Title>
                 <Card.Text>
-                  Neil Mellor reflects on Liverpool's 5-2 aggregate win over
-                  Villarreal that sees them reach their third Champions League
-                  final in five years.
+                  Liverpool overcame Villarreal to book a third Champions League
+                  final in five seasons with a 3-2 victory at El Madrigal on
+                  Tuesday night.
                 </Card.Text>
-                <Button variant="info">Get posts</Button>
+                <Link
+                  to={{
+                    pathname: "/recommends",
+                  }}
+                >
+                  <Button variant="info">Get posts</Button>
+                </Link>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem" }} className="popular-news-card">
