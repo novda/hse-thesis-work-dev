@@ -45,6 +45,14 @@ button {
   width: 20px;
 }
 
+.left-card-media {
+  max-width: 350px;
+  margin-top: 50px;
+  img {
+    width: 30px;
+  }
+}
+
 .popular-news img {
   height: 250;
   object-fit: cover;
