@@ -74,6 +74,10 @@ button {
   }
 }
 
-.text-muted {
+.text-muted.form-label {
+
+  &.unsupporting{
+    color: #fa2340;
+  }
   margin-top: -0.9em;
 }

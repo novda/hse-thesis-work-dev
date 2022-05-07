@@ -13,6 +13,25 @@ import the_guardian_icon from './icons/The_Guardian.png'
 import nytimes_icon from './icons/nytimes.png'
 
 export function MainPage() {
+    const [link, setLink] = useState()
+
+    const chooseRecommendPage = (link) => {
+        const rec1 = 'https://www.theverge.com/23026874/elon-musk-twitter-buyout-news-updates'
+        const rec2 = 'https://www.theguardian.com/world/2022/apr/30/angelina-jolie-makes-surprise-visit-to-ukraine'
+        const rec3 = 'https://www.skysports.com/football/villarreal-vs-liverpool/report/463261'
+
+        switch (link) {
+            case rec1:
+                return 'recommends'
+            case rec2:
+                return 'recommends2'
+            case rec3:
+                return 'recommends3'
+            default:
+                return ''
+        }
+    }
+
     return (
         <Container className="main-page">
             <Row>
@@ -75,18 +94,19 @@ export function MainPage() {
                                 placeholder="Link to News"
                                 aria-label="Link to News"
                                 aria-describedby="basic-addon2"
+                                onChange={(e) => setLink(e.target.value)}
                             />
                             <Link
                                 to={{
-                                    pathname: '/recommends',
+                                    pathname: `${chooseRecommendPage(link)}`,
                                 }}
                             >
-                                <Button type="button" className="btn btn-primary" id="button-addon2">
+                                <Button type="submit" className="btn btn-primary" id="button-addon2">
                                     Get posts
                                 </Button>
                             </Link>
                         </InputGroup>
-                        <Form.Text className="text-muted">See supporting media</Form.Text>
+                        <Form.Text id="form-label-1" className="text-muted form-label">See supporting media</Form.Text>
                     </Row>
                     <Row className="popular-news">
                         <h2>Popular News</h2>
