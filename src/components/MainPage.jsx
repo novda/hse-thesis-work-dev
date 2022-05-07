@@ -86,7 +86,7 @@ export function MainPage() {
                                 </Button>
                             </Link>
                         </InputGroup>
-                        <Form.Text className="text-muted">See supporting media on left</Form.Text>
+                        <Form.Text className="text-muted">See supporting media</Form.Text>
                     </Row>
                     <Row className="popular-news">
                         <h2>Popular News</h2>
