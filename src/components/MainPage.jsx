@@ -17,8 +17,8 @@ export function MainPage() {
 
     const chooseRecommendPage = (link) => {
         const rec1 = 'https://www.theverge.com/23026874/elon-musk-twitter-buyout-news-updates'
-        const rec2 = 'https://www.theguardian.com/world/2022/apr/30/angelina-jolie-makes-surprise-visit-to-ukraine'
-        const rec3 = 'https://www.skysports.com/football/villarreal-vs-liverpool/report/463261'
+        const rec2 = 'https://www.skysports.com/football/villarreal-vs-liverpool/report/463261'
+        const rec3 = 'https://www.theguardian.com/world/2022/apr/30/angelina-jolie-makes-surprise-visit-to-ukraine'
 
         switch (link) {
             case rec1:
